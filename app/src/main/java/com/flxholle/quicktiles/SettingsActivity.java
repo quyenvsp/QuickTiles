@@ -55,6 +55,7 @@ import com.flxholle.quicktiles.tiles.HeadsUpTileService;
 import com.flxholle.quicktiles.tiles.KeepScreenOnTileService;
 import com.flxholle.quicktiles.tiles.MediaVolumeTileService;
 import com.flxholle.quicktiles.tiles.RotationSwitchTileService;
+import com.flxholle.quicktiles.tiles.ScreenInfinityTileService;
 import com.flxholle.quicktiles.tiles.ScreenTimeoutTileService;
 import com.flxholle.quicktiles.tiles.ShowTapsTileService;
 import com.flxholle.quicktiles.tiles.SilenceLoudSwitchTileService;
@@ -106,6 +107,7 @@ public class SettingsActivity extends AppCompatActivity implements SearchPrefere
         servicePreferences.put("new_event", NewCalendarEventTileService.class);
         servicePreferences.put("make_call", MakeCallTileService.class);
         servicePreferences.put("counter", CounterTileService.class);
+        servicePreferences.put("screen_infinity", ScreenInfinityTileService.class);
         servicePreferences.put("screen_timeout", ScreenTimeoutTileService.class);
         servicePreferences.put("vibrate_calls", VibrateCallsTileService.class);
         servicePreferences.put("switch_states", DoNotDisturbSwitchTileService.class);
@@ -170,6 +172,7 @@ public class SettingsActivity extends AppCompatActivity implements SearchPrefere
         ArrayList<Class<?>> services = new ArrayList<>();
         services.add(AdaptiveBrightnessTileService.class);
         services.add(BrightnessTileService.class);
+        services.add(ScreenInfinityTileService.class);
         services.add(ScreenTimeoutTileService.class);
         services.add(VibrateCallsTileService.class);
         return services;

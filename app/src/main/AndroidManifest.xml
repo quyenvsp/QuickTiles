@@ -417,6 +417,17 @@
             </intent-filter>
         </service>
         <service
+            android:name=".tiles.ScreenInfinityTileService"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_screen_infinity"
+            android:label="@string/screen_infinity"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service
             android:name=".tiles.ScreenTimeoutTileService"
             android:enabled="false"
             android:exported="true"
