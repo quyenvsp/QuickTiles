@@ -1,9 +1,12 @@
 package com.flxholle.quicktiles;
 
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.ArrayMap;
 import android.util.Pair;
+import android.view.View;
+import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -216,9 +219,19 @@ public class SettingsActivity extends AppCompatActivity implements SearchPrefere
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        Window window = getWindow();
+        window.setStatusBarColor(Color.TRANSPARENT);
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.setStatusBarContrastEnforced(false);
+            window.setNavigationBarContrastEnforced(false);
+        }
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+        }
 
         prefsFragment = new com.flxholle.quicktiles.SettingsFragment();
         getSupportFragmentManager()
