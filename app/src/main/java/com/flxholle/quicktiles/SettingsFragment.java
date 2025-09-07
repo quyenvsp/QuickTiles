@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.service.quicksettings.TileService;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.ArrayMap;
@@ -110,6 +111,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             SwitchPreferenceCompat switchPreference = findPreference(entry.getKey());
             if (switchPreference != null) {
                 final Class<?> serviceClass = entry.getValue();
+
+                if (switchPreference.isChecked()) {
+                    setComponentState(true, serviceClass);
+                    TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), serviceClass));
+                }
 
                 if (higherMinApiServices.containsKey(serviceClass)) {
                     Pair<Boolean, Integer> apiValue = higherMinApiServices.get(serviceClass);
