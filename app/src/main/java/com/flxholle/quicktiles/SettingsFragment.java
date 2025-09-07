@@ -178,7 +178,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                     String labelKey = key + "_label";
                     SelectApp.insertCustomAppName(requireContext(), labelKey, preselection, () -> {
                         setComponentState(Boolean.TRUE, serviceClass);
-//                    TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), serviceClass));
+                    TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), serviceClass));
                         ((SwitchPreferenceCompat) preference).setChecked(true);
                         preference.setTitle(SharedPreferencesUtil.getCustomPackage(requireContext(), labelKey));
                     }).show();
