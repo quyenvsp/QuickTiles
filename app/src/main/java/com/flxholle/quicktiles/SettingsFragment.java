@@ -27,6 +27,7 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.bytehamster.lib.preferencesearch.SearchConfiguration;
 import com.bytehamster.lib.preferencesearch.SearchPreference;
+import com.flxholle.quicktiles.tiles.CounterTileService;
 import com.flxholle.quicktiles.utils.GrantPermissionDialogs;
 import com.flxholle.quicktiles.utils.SelectApp;
 import com.flxholle.quicktiles.utils.SharedPreferencesUtil;
@@ -90,7 +91,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         Preference resetCounter = findPreference("reset_counter");
         resetCounter.setOnPreferenceClickListener((preference -> {
             SharedPreferencesUtil.resetCounter(requireContext());
-//            TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), CounterTileService.class));
+            TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), CounterTileService.class));
             return true;
         }));
     }
@@ -111,6 +112,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             SwitchPreferenceCompat switchPreference = findPreference(entry.getKey());
             if (switchPreference != null) {
                 final Class<?> serviceClass = entry.getValue();
+
+                if (switchPreference.isChecked()) {
+                    setComponentState(true, serviceClass);
+                    TileService.requestListeningState(requireContext(), new ComponentName(requireContext(), serviceClass));
+                }
 
                 if (higherMinApiServices.containsKey(serviceClass)) {
                     Pair<Boolean, Integer> apiValue = higherMinApiServices.get(serviceClass);

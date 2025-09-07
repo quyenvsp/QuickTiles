@@ -11,6 +11,7 @@ public abstract class OpenCustomAppTileService extends IntentTileService {
 
     @Override
     public void onTileAdded() {
+        super.onTileAdded();
         updateState();
     }
 
