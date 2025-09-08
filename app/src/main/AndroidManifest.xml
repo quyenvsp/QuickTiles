@@ -70,6 +70,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.NextSongTileService"
@@ -81,6 +84,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.PreviousSongTileService"
@@ -92,6 +98,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.MediaVolumeTileService"
@@ -103,6 +112,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
 
         <service
@@ -115,6 +127,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.AdaptiveBrightnessTileService"
@@ -225,6 +240,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.NewTimerTileService"
@@ -236,6 +254,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.TakePhotoTileService"
@@ -247,6 +268,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.RecordVideoTileService"
@@ -258,6 +282,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenCalculatorTileService"
@@ -269,6 +296,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenVolumePanelTileService"
@@ -280,6 +310,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.BrightnessTileService"
@@ -324,6 +357,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenDataUsageTileService"
@@ -335,6 +371,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenAboutPhoneTileService"
@@ -346,6 +385,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenConnectedDevicesTileService"
@@ -357,6 +399,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenNotificationLogTileService"
@@ -368,6 +413,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenSettingsSearchTileService"
@@ -379,6 +427,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.NewCalendarEventTileService"
@@ -390,6 +441,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.MakeCallTileService"
@@ -401,6 +455,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.CounterTileService"
@@ -412,6 +469,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.ScreenTimeoutTileService"
@@ -478,6 +538,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenDeveloperOptionsTileService"
@@ -489,6 +552,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenLocaleTileService"
@@ -500,6 +566,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenAppOneTileService"
@@ -592,6 +661,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenHomeTileService"
@@ -603,6 +675,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenPrivacyTileService"
@@ -614,6 +689,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".intent_tiles.OpenUserDictionaryTileService"
@@ -625,6 +703,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".accessibility_tiles.PowerDialogTileService"
@@ -636,6 +717,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".accessibility_tiles.ScreenshotTileService"
@@ -647,6 +731,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".accessibility_tiles.LockScreenTileService"
@@ -658,6 +745,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".accessibility_tiles.ToggleSplitScreenTileService"
@@ -669,6 +759,9 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
         </service>
         <service
             android:name=".tiles.HeadsUpTileService"
