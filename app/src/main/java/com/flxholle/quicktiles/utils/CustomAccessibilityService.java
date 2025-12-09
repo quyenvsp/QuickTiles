@@ -46,6 +46,11 @@ public class CustomAccessibilityService extends AccessibilityService {
 
     // screenshot, API>=P
     private void takeScreenshot() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             performGlobalAction(AccessibilityService.GLOBAL_ACTION_TAKE_SCREENSHOT);
         }
